@@ -1,0 +1,874 @@
+19:56:09 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14796	     24	   1832	  16652	   410c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+19:56:23 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14796	     24	   1832	  16652	   410c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+19:56:36 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14796	     24	   1832	  16652	   410c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+19:59:31 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_CAN_RxCpltCallback':
+../Core/Src/main.c:351:6: warning: implicit declaration of function 'HAL_CAN_Receive_IT'; did you mean 'HAL_UART_Receive_IT'? [-Wimplicit-function-declaration]
+  351 |   if(HAL_CAN_Receive_IT(hcan, CAN_FIFO0) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~
+      |      HAL_UART_Receive_IT
+../Core/Src/main.c:351:31: error: 'CAN_FIFO0' undeclared (first use in this function); did you mean 'CAN_RX_FIFO0'?
+  351 |   if(HAL_CAN_Receive_IT(hcan, CAN_FIFO0) != HAL_OK)
+      |                               ^~~~~~~~~
+      |                               CAN_RX_FIFO0
+../Core/Src/main.c:351:31: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:59:36 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_CAN_RxCpltCallback':
+../Core/Src/main.c:351:6: warning: implicit declaration of function 'HAL_CAN_Receive_IT'; did you mean 'HAL_UART_Receive_IT'? [-Wimplicit-function-declaration]
+  351 |   if(HAL_CAN_Receive_IT(hcan, CAN_FIFO0) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~
+      |      HAL_UART_Receive_IT
+../Core/Src/main.c:351:31: error: 'CAN_FIFO0' undeclared (first use in this function); did you mean 'CAN_RX_FIFO0'?
+  351 |   if(HAL_CAN_Receive_IT(hcan, CAN_FIFO0) != HAL_OK)
+      |                               ^~~~~~~~~
+      |                               CAN_RX_FIFO0
+../Core/Src/main.c:351:31: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:00:04 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_CAN_RxCpltCallback':
+../Core/Src/main.c:351:6: warning: implicit declaration of function 'HAL_CAN_Receive_IT'; did you mean 'HAL_UART_Receive_IT'? [-Wimplicit-function-declaration]
+  351 |   if(HAL_CAN_Receive_IT(hcan, CAN_RX_FIFO0) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~
+      |      HAL_UART_Receive_IT
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14796	     24	   1832	  16652	   410c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:01:00 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14796	     24	   1832	  16652	   410c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:01:24 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14796	     24	   1832	  16652	   410c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:06:18 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14808	     24	   1832	  16664	   4118	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:06:26 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14808	     24	   1832	  16664	   4118	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:07:12 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14816	     24	   1832	  16672	   4120	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:07:18 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14816	     24	   1832	  16672	   4120	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:07:32 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14816	     24	   1832	  16672	   4120	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:10:21 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14816	     24	   1832	  16672	   4120	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:10:36 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14816	     24	   1832	  16672	   4120	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:10:52 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14816	     24	   1832	  16672	   4120	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:13:18 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14820	     20	   1836	  16676	   4124	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:15:27 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14820	     20	   1836	  16676	   4124	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:15:31 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14820	     20	   1836	  16676	   4124	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:15:43 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14820	     20	   1836	  16676	   4124	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:16:46 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14868	     20	   1836	  16724	   4154	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:16:53 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14868	     20	   1836	  16724	   4154	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:21:30 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15336	     20	   1836	  17192	   4328	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:21:37 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15336	     20	   1836	  17192	   4328	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:25:02 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15352	     20	   1836	  17208	   4338	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:25:30 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15372	     20	   1836	  17228	   434c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:25:54 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15372	     20	   1836	  17228	   434c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:30:51 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  12828	     20	   1796	  14644	   3934	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:30:57 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12828	     20	   1796	  14644	   3934	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:32:52 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:32:56 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:33:33 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:33:37 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:38:38 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:38:42 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:39:31 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14716	     24	   1832	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:39:38 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14716	     24	   1832	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:39:57 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:39:59 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:42:18 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:42:21 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14716	     20	   1836	  16572	   40bc	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:45:24 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15184	     20	   1836	  17040	   4290	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:45:28 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15184	     20	   1836	  17040	   4290	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:46:59 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15184	     20	   1836	  17040	   4290	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:47:12 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15184	     20	   1836	  17040	   4290	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:47:57 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15184	     20	   1836	  17040	   4290	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:49:00 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:49:06 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:50:27 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:50:34 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:51:25 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+20:51:29 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:52:31 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+20:53:34 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+21:50:10 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+21:50:22 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+21:54:20 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+21:54:31 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:06:05 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:06:10 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:07:13 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     20	   1836	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:16:41 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15208	     24	   1832	  17064	   42a8	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:16:45 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15208	     24	   1832	  17064	   42a8	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:18:23 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15204	     24	   1832	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:18:30 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     24	   1832	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:18:42 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15204	     24	   1832	  17060	   42a4	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:21:33 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:173:25: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
+  173 |                         return;
+      |                         ^~~~~~
+../Core/Src/main.c:81:5: note: declared here
+   81 | int main(void)
+      |     ^~~~
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15352	     24	   1832	  17208	   4338	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:21:52 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15344	     24	   1832	  17200	   4330	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:22:01 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15344	     24	   1832	  17200	   4330	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:22:59 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15356	     24	   1832	  17212	   433c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:23:03 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15356	     24	   1832	  17212	   433c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:23:38 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15356	     24	   1832	  17212	   433c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:25:12 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15356	     24	   1832	  17212	   433c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:25:27 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15356	     24	   1832	  17212	   433c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:25:30 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15356	     24	   1832	  17212	   433c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:27:18 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15316	     20	   1828	  17164	   430c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:27:26 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15316	     20	   1828	  17164	   430c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:27:37 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15316	     20	   1828	  17164	   430c	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:29:01 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15352	     20	   1828	  17200	   4330	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:29:06 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15352	     20	   1828	  17200	   4330	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+22:30:37 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15384	     20	   1828	  17232	   4350	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:30:56 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15384	     20	   1828	  17232	   4350	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+22:31:03 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15384	     20	   1828	  17232	   4350	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+17:59:09 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15384	     20	   1828	  17232	   4350	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+18:07:54 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15424	     20	   1828	  17272	   4378	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+18:08:02 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15424	     20	   1828	  17272	   4378	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+18:17:12 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CAN_Comm_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\alexj\RSA\RoBorscht\codes\roborscht-stm32-can-communication\CAN_Comm_Test\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_Comm_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_Comm_Test.elf
+ 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+arm-none-eabi-objdump -h -S  CAN_Comm_Test.elf  > "CAN_Comm_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  15424	     20	   1828	  17272	   4378	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_Comm_Test.list
+ 
+18:17:17 **** Incremental Build of configuration Debug for project CAN_Comm_Test ****
+make -j16 all 
+arm-none-eabi-size   CAN_Comm_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15424	     20	   1828	  17272	   4378	CAN_Comm_Test.elf
+Finished building: default.size.stdout
+ 

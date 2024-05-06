@@ -124,6 +124,11 @@ int main(void)
 	  Error_Handler();
   }
 
+  if (HAL_CAN_ActivateNotification(&hcan1, CAN_IT_ERROR) != HAL_OK)
+  {
+	  Error_Handler();
+  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -164,14 +169,6 @@ int main(void)
 	  else
 	  {
 		  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_RESET);
-	  }
-	  if (data_send)
-	  {
-		  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
-	  }
-	  else
-	  {
-		  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
 	  }
 
 	  // Check for message
@@ -279,7 +276,7 @@ static void MX_CAN1_Init(void)
   CAN_FilterTypeDef can_filter_config;
 
   can_filter_config.FilterActivation = CAN_FILTER_ENABLE;
-  can_filter_config.FilterBank = 18;
+  can_filter_config.FilterBank = 0;
   can_filter_config.FilterFIFOAssignment = CAN_FILTER_FIFO0;
   can_filter_config.FilterIdHigh = 0xFFFF << 5;
   can_filter_config.FilterIdLow = 0;
@@ -287,7 +284,7 @@ static void MX_CAN1_Init(void)
   can_filter_config.FilterMaskIdLow = 0x0000;
   can_filter_config.FilterMode = CAN_FILTERMODE_IDMASK;
   can_filter_config.FilterScale = CAN_FILTERSCALE_32BIT;
-  can_filter_config.SlaveStartFilterBank = 20;
+  can_filter_config.SlaveStartFilterBank = 0;
 
   if (HAL_CAN_ConfigFilter(&hcan1, &can_filter_config) != HAL_OK)
   {
@@ -374,6 +371,12 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
 	HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData);
 	data_check = RxData[0];
+}
+
+void HAL_CAN_ErrorCallback(CAN_HandleTypeDef *hcan)
+{
+	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
+	Error_Handler();
 }
 
 /* USER CODE END 4 */
